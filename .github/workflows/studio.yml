@@ -59,7 +59,7 @@ jobs:
         run: ${{ steps.pkgman.outputs.package_manager }} install
 
       - name: Generate
-        run: pnpm add better-sqlite3 --allow-build=better-sqlite3 && npx nuxi build --preset github_pages
+        run: pnpm add better-sqlite3 --allow-build=better-sqlite3 --allow-build=@parcel/watcher --allow-build=esbuild --allow-build=sharp --allow-build=sqlite3 --allow-build=unrs-resolver --allow-build=vue-demi && npx nuxi build --preset github_pages
         env:
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
           
