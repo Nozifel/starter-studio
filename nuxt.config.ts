@@ -72,6 +72,7 @@ export default defineNuxtConfig({
 
   experimental: {
     viewTransition: true,
+    nativeSqlite: true
   },
 
   compatibilityDate: '2025-01-05',
